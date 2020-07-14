@@ -1,0 +1,10 @@
+C:\Users\이나린\Desktop\C# 기말대비\2020.07.04_04\bin\Debug\2020.07.04_04.exe.config
+C:\Users\이나린\Desktop\C# 기말대비\2020.07.04_04\bin\Debug\2020.07.04_04.exe
+C:\Users\이나린\Desktop\C# 기말대비\2020.07.04_04\bin\Debug\2020.07.04_04.pdb
+C:\Users\이나린\Desktop\C# 기말대비\2020.07.04_04\obj\Debug\2020.07.04_04.csprojAssemblyReference.cache
+C:\Users\이나린\Desktop\C# 기말대비\2020.07.04_04\obj\Debug\_2020._07._04_04.Form1.resources
+C:\Users\이나린\Desktop\C# 기말대비\2020.07.04_04\obj\Debug\_2020._07._04_04.Properties.Resources.resources
+C:\Users\이나린\Desktop\C# 기말대비\2020.07.04_04\obj\Debug\2020.07.04_04.csproj.GenerateResource.cache
+C:\Users\이나린\Desktop\C# 기말대비\2020.07.04_04\obj\Debug\2020.07.04_04.csproj.CoreCompileInputs.cache
+C:\Users\이나린\Desktop\C# 기말대비\2020.07.04_04\obj\Debug\2020.07.04_04.exe
+C:\Users\이나린\Desktop\C# 기말대비\2020.07.04_04\obj\Debug\2020.07.04_04.pdb
