@@ -16,18 +16,75 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험
 
         protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
 
+            string text, value;
+            text = RadioButtonList1.SelectedItem.Text.ToString();
+            value = RadioButtonList1.SelectedItem.Value.ToString();
+           
+            ListBox1.Items.Add(new ListItem(text, value));
+            
+            if (CheckBoxList1.SelectedIndex > -1)
+            {
+                ListBox1.Items.Clear();
+                ListBox1.Items.Add(new ListItem(text, value));
+                
+                foreach(ListItem item in CheckBoxList1.Items)
+                {
+                    if (item.Selected)
+                        ListBox1.Items.Add(item.Text);
+                }
+                
+            }
         }
 
         protected void CheckBoxList1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            string Rtext, Rvalue;
+            int sumC = 0;
 
+            Rtext = RadioButtonList1.SelectedItem.Text.ToString();
+            Rvalue = RadioButtonList1.SelectedItem.Value.ToString();
+
+            if(CheckBoxList1.SelectedIndex > -1)
+            {
+                ListBox1.Items.Clear();
+                ListBox1.Items.Add(new ListItem(Rtext, Rvalue));
+                foreach (ListItem item in CheckBoxList1.Items)
+                {
+                    if (item.Selected)
+                    {
+                        ListBox1.Items.Add(item.Text);
+                    }
+                }
+                
+            }
+
+            foreach (ListItem item in ListBox1.Items)
+            {
+                sumC += int.Parse(item.Value);
+            }
+
+            TextBox1.Text = sumC.ToString();
+            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (RadioButtonList1.SelectedIndex > -1)
+            if (RadioButtonList1.SelectedIndex > -1) //Radiobutton 초기화
                 RadioButtonList1.SelectedItem.Selected = false;
+
+            if (CheckBoxList1.SelectedIndex > -1) //Checkbox 초기화
+            {
+                foreach(ListItem item in CheckBoxList1.Items)
+                {
+                    if (item.Selected)
+                        item.Selected = false;
+                }
+            }
+
+            ListBox1.Items.Clear();
+            TextBox1.Text = "";
         }
     }
 }
