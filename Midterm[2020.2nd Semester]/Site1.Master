@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Midterm_2020._2nd_Semester_.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 699px;
+        }
+        .auto-style3 {
+            height: 24px;
+            text-align: center;
+            background-color: #CCCCFF;
+        }
+        .auto-style5 {
+            height: 24px;
+            background-color: #FFFFFF;
+        }
+        .auto-style6 {
+            height: 24px;
+            background-color: #CCCCFF;
+        }
+        .auto-style7 {
+            height: 24px;
+            width: 233px;
+            background-color: #CCCCFF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style6" colspan="2"><strong>중간실습시험</strong></td>
+            </tr>
+            <tr>
+                <td class="auto-style7">
+                    <asp:TreeView ID="TreeView1" runat="server">
+                        <Nodes>
+                            <asp:TreeNode Text="중간실습시험" Value="중간실습시험">
+                                <asp:TreeNode Text="1" Value="1"></asp:TreeNode>
+                                <asp:TreeNode Text="2" Value="2"></asp:TreeNode>
+                                <asp:TreeNode Text="3" Value="3"></asp:TreeNode>
+                            </asp:TreeNode>
+                        </Nodes>
+                    </asp:TreeView>
+                </td>
+                <td class="auto-style5">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3" colspan="2"><strong>20203179 이나린</strong></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
