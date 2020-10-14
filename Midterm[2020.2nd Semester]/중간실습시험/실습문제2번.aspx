@@ -55,7 +55,13 @@
         z-index: 1;
         width: 223px;
     }
-</style>
+        .auto-style16 {
+            position: absolute;
+            top: 499px;
+            left: 759px;
+            z-index: 1;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
@@ -122,6 +128,7 @@
 <p>
 </p>
 <p>
+    <asp:Button ID="Button2" runat="server" CssClass="auto-style16" OnClick="Button2_Click" Text="계산" />
 </p>
 <p>
     <asp:Label ID="Label1" runat="server" CssClass="auto-style14" Text="총 가격 : "></asp:Label>

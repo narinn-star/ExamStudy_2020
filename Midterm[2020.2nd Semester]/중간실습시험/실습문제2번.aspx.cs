@@ -16,56 +16,11 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험
 
         protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
 
-            string text, value;
-            text = RadioButtonList1.SelectedItem.Text.ToString();
-            value = RadioButtonList1.SelectedItem.Value.ToString();
-           
-            ListBox1.Items.Add(new ListItem(text, value));
-            
-            if (CheckBoxList1.SelectedIndex > -1)
-            {
-                ListBox1.Items.Clear();
-                ListBox1.Items.Add(new ListItem(text, value));
-                
-                foreach(ListItem item in CheckBoxList1.Items)
-                {
-                    if (item.Selected)
-                        ListBox1.Items.Add(item.Text);
-                }
-                
-            }
         }
 
         protected void CheckBoxList1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string Rtext, Rvalue;
-            int sumC = 0;
-
-            Rtext = RadioButtonList1.SelectedItem.Text.ToString();
-            Rvalue = RadioButtonList1.SelectedItem.Value.ToString();
-
-            if(CheckBoxList1.SelectedIndex > -1)
-            {
-                ListBox1.Items.Clear();
-                ListBox1.Items.Add(new ListItem(Rtext, Rvalue));
-                foreach (ListItem item in CheckBoxList1.Items)
-                {
-                    if (item.Selected)
-                    {
-                        ListBox1.Items.Add(item.Text);
-                    }
-                }
-                
-            }
-
-            foreach (ListItem item in ListBox1.Items)
-            {
-                sumC += int.Parse(item.Value);
-            }
-
-            TextBox1.Text = sumC.ToString();
             
         }
 
@@ -85,6 +40,32 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험
 
             ListBox1.Items.Clear();
             TextBox1.Text = "";
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            ListBox1.Items.Clear();
+            if(RadioButtonList1.SelectedIndex > -1)
+            {
+                ListBox1.Items.Add(new ListItem(RadioButtonList1.SelectedItem.Text, 
+                                                RadioButtonList1.SelectedItem.Value));
+            }
+
+            if(CheckBoxList1.SelectedIndex > -1)
+            {
+                foreach (ListItem item in CheckBoxList1.Items)
+                {
+                    if(item.Selected)
+                    ListBox1.Items.Add(new ListItem(item.Text, item.Value));
+                }
+            }
+
+            int sum = 0;
+            foreach(ListItem item in ListBox1.Items)
+            {
+                sum += int.Parse(item.Value);
+            }
+            TextBox1.Text = sum.ToString();
         }
     }
 }
