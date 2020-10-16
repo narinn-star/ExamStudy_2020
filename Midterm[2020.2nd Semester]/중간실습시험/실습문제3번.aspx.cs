@@ -35,7 +35,8 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험
             {
                 TextBox1.Text = ListBox1.SelectedItem.Value;
                 bool samemenu = false; int itemindex = 0; int itemValue = 0; string itemText = "";
-                foreach(ListItem item in ListBox2.Items)
+
+                foreach (ListItem item in ListBox2.Items)
                 {
                     if (item.Text.Contains(ListBox1.SelectedItem.Text))
                     {
@@ -51,7 +52,8 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험
                     string firstorder = ListBox1.SelectedItem.Text + "[" + TextBox2.Text + "]그릇";
                     ListBox2.Items.Add(new ListItem(firstorder, ListBox1.SelectedItem.Value.ToString()));
                 }
-                else //추가 주문
+
+                else //추가 주문    
                 {
                     string zeroindex = itemText.Substring(itemText.IndexOf("[") + 1);
                     int neworder = int.Parse(zeroindex.Substring(0, zeroindex.IndexOf("]"))) + int.Parse(TextBox2.Text);

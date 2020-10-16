@@ -36,7 +36,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
-        &nbsp;<table class="auto-style8">
+        &nbsp;&nbsp;<table class="auto-style8">
         <tr>
             <td class="auto-style18" colspan="2">회원가입양식</td>
             <td class="auto-style30">&nbsp;</td>
@@ -86,7 +86,8 @@
             </td>
             <td class="auto-style31">
                 <asp:Label ID="Label14" runat="server"></asp:Label>
-                <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox3" ControlToValidate="TextBox2" CssClass="auto-style33" EnableClientScript="False" ErrorMessage="암호가 일치하지 않습니다!" Visible="False"></asp:CompareValidator>
+                <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox3" ControlToValidate="TextBox2" CssClass="auto-style33" EnableClientScript="False" ErrorMessage="틀려써임마"></asp:CompareValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" CssClass="auto-style33" EnableClientScript="False" ErrorMessage="입력해조"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -176,7 +177,7 @@
             <td class="auto-style34">
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="비우기" />
 &nbsp;&nbsp;
-                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="확인" />
+                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="확인" style="width: 50px" />
             </td>
             <td class="auto-style30">&nbsp;</td>
             <td class="auto-style31">&nbsp;</td>

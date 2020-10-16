@@ -70,6 +70,15 @@
     <Content Include="Home.aspx" />
     <Content Include="Web.config" />
     <Content Include="중간실습시험2\실습문제1번%28Validation%29.aspx" />
+    <Content Include="중간실습시험2\실습문제2번.aspx" />
+    <Content Include="중간실습시험2\실습문제3번.aspx" />
+    <Content Include="중간실습시험2\예상문제01.aspx" />
+    <Content Include="중간실습시험2\예상문제02.aspx" />
+    <Content Include="중간실습시험2\예상문제03.aspx" />
+    <Content Include="중간실습시험3\실습문제1번.aspx" />
+    <Content Include="중간실습시험3\실습문제2번.aspx" />
+    <Content Include="중간실습시험3\실습문제3번.aspx" />
+    <Content Include="중간실습시험3\예상문제01.aspx" />
     <Content Include="중간실습시험\실습문제1번.aspx" />
     <Content Include="중간실습시험\실습문제2번.aspx" />
     <Content Include="중간실습시험\실습문제3번.aspx" />
@@ -96,6 +105,69 @@
     </Compile>
     <Compile Include="중간실습시험2\실습문제1번%28Validation%29.aspx.designer.cs">
       <DependentUpon>실습문제1번%28Validation%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="중간실습시험2\실습문제2번.aspx.cs">
+      <DependentUpon>실습문제2번.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="중간실습시험2\실습문제2번.aspx.designer.cs">
+      <DependentUpon>실습문제2번.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="중간실습시험2\실습문제3번.aspx.cs">
+      <DependentUpon>실습문제3번.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="중간실습시험2\실습문제3번.aspx.designer.cs">
+      <DependentUpon>실습문제3번.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="중간실습시험2\예상문제01.aspx.cs">
+      <DependentUpon>예상문제01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="중간실습시험2\예상문제01.aspx.designer.cs">
+      <DependentUpon>예상문제01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="중간실습시험2\예상문제02.aspx.cs">
+      <DependentUpon>예상문제02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="중간실습시험2\예상문제02.aspx.designer.cs">
+      <DependentUpon>예상문제02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="중간실습시험2\예상문제03.aspx.cs">
+      <DependentUpon>예상문제03.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="중간실습시험2\예상문제03.aspx.designer.cs">
+      <DependentUpon>예상문제03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="중간실습시험3\실습문제1번.aspx.cs">
+      <DependentUpon>실습문제1번.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="중간실습시험3\실습문제1번.aspx.designer.cs">
+      <DependentUpon>실습문제1번.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="중간실습시험3\실습문제2번.aspx.cs">
+      <DependentUpon>실습문제2번.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="중간실습시험3\실습문제2번.aspx.designer.cs">
+      <DependentUpon>실습문제2번.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="중간실습시험3\실습문제3번.aspx.cs">
+      <DependentUpon>실습문제3번.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="중간실습시험3\실습문제3번.aspx.designer.cs">
+      <DependentUpon>실습문제3번.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="중간실습시험3\예상문제01.aspx.cs">
+      <DependentUpon>예상문제01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="중간실습시험3\예상문제01.aspx.designer.cs">
+      <DependentUpon>예상문제01.aspx</DependentUpon>
     </Compile>
     <Compile Include="중간실습시험\실습문제1번.aspx.cs">
       <DependentUpon>실습문제1번.aspx</DependentUpon>

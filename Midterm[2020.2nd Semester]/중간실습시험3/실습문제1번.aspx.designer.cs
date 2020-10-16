@@ -7,11 +7,11 @@
 // </자동 생성됨>
 //------------------------------------------------------------------------------
 
-namespace Midterm_2020._2nd_Semester_.중간실습시험2
+namespace Midterm_2020._2nd_Semester_.중간실습시험3
 {
 
 
-    public partial class 실습문제1번_Validation_
+    public partial class 실습문제1번
     {
 
         /// <summary>
@@ -123,15 +123,6 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험2
         protected global::System.Web.UI.WebControls.Label Label14;
 
         /// <summary>
-        /// CompareValidator1 컨트롤입니다.
-        /// </summary>
-        /// <remarks>
-        /// 자동 생성 필드입니다.
-        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
-
-        /// <summary>
         /// RequiredFieldValidator3 컨트롤입니다.
         /// </summary>
         /// <remarks>
@@ -139,6 +130,15 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험2
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+
+        /// <summary>
+        /// CompareValidator1 컨트롤입니다.
+        /// </summary>
+        /// <remarks>
+        /// 자동 생성 필드입니다.
+        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
 
         /// <summary>
         /// Label5 컨트롤입니다.
@@ -285,13 +285,13 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험2
         protected global::System.Web.UI.WebControls.Label Label19;
 
         /// <summary>
-        /// RegularExpressionValidator2 컨트롤입니다.
+        /// RegularExpressionValidator1 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
 
         /// <summary>
         /// TextBox9 컨트롤입니다.
@@ -321,13 +321,13 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험2
         protected global::System.Web.UI.WebControls.Label Label20;
 
         /// <summary>
-        /// RegularExpressionValidator3 컨트롤입니다.
+        /// RegularExpressionValidator2 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
 
         /// <summary>
         /// Button1 컨트롤입니다.

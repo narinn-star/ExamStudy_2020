@@ -69,10 +69,14 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험2
              *      Label13.Text += "*";
              * }
              */
-            if (TextBox3.Text == "")
+            if (RequiredFieldValidator3.IsValid)
                 Label14.Text = "";
-            else if (TextBox2.Text == TextBox3.Text)
+
+            if (CompareValidator1.IsValid && TextBox3.Text != "")
                 Label14.Text = "암호 일치";
+
+            
+            
                 
             Label15.Text = TextBox4.Text;
             Label16.Text = TextBox5.Text;
