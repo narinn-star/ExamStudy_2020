@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.WebSockets;
 
 namespace Midterm_2020._2nd_Semester_.중간실습시험2
 {
@@ -16,9 +17,10 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험2
 
         protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(ListBox1.SelectedIndex > 0) {
+            if(ListBox1.SelectedIndex > 0)
+            {
+                
                 TextBox4.Text = ListBox1.SelectedItem.Value;
-                ListBox1.SelectedIndex = -1;
 
                 bool samemenu = false; int itemValue = 0; int itemindex = 0; string itemText = "";
                 foreach(ListItem item in ListBox2.Items)
@@ -28,26 +30,25 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험2
                         samemenu = true;
                         itemValue = int.Parse(item.Value);
                         itemText = item.Text;
-                        itemindex = ListBox2.Items.IndexOf(new ListItem(item.Text,item.Value));
+                        itemindex = ListBox2.Items.IndexOf(new ListItem(item.Text, item.Value));
                     }
                 }
-
-                if(!samemenu) //첫주문
+                
+                if (!samemenu) //첫
                 {
                     string firstorder = ListBox1.SelectedItem.Text + "[" + TextBox5.Text + "]그릇";
                     ListBox2.Items.Add(new ListItem(firstorder, ListBox1.SelectedItem.Value));
                 }
-
-                else //추가주문
+                else //추가
                 {
                     string zeroindex = itemText.Substring(itemText.IndexOf("[") + 1);
-                    int neworder = int.Parse(zeroindex.Substring(0, zeroindex.IndexOf("]"))) + 
-                                    int.Parse(TextBox5.Text);
+                    int neworder = int.Parse(zeroindex.Substring(0, zeroindex.IndexOf("]"))) + int.Parse(TextBox5.Text);
                     string newordertext = ListBox1.SelectedItem.Text + "[" + neworder + "]그릇";
 
                     ListBox2.Items.Remove(new ListItem(itemText, itemValue.ToString()));
-                    ListBox2.Items.Insert(itemindex, new ListItem(newordertext, ListBox1.SelectedItem.Value.ToString()));
+                    ListBox2.Items.Insert(itemindex, new ListItem(newordertext, ListBox1.SelectedItem.Value));
                 }
+                ListBox1.SelectedIndex = -1;
 
                 //계산
                 int TotalOrder = 0; int TotalPrice = 0; int EachOrder = 0;
@@ -57,7 +58,7 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험2
                     if (item.Text.Contains("["))
                     {
                         TotalOrder += int.Parse(item.Text.Substring(item.Text.IndexOf("[") + 1,
-                                                (item.Text.IndexOf("]") - item.Text.IndexOf("[") -1))); 
+                                                (item.Text.IndexOf("]") - item.Text.IndexOf("[") - 1)));
                     }
                 }
                 TextBox6.Text = TotalOrder.ToString();
@@ -67,7 +68,7 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험2
                     if (item.Text.Contains("]"))
                     {
                         EachOrder = int.Parse(item.Text.Substring(item.Text.IndexOf("[") + 1,
-                                                (item.Text.IndexOf("]") - item.Text.IndexOf("[") - 1)));
+                                                 (item.Text.IndexOf("]") - item.Text.IndexOf("[") - 1)));
                         TotalPrice += EachOrder * int.Parse(item.Value);
                     }
                 }
@@ -82,7 +83,7 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험2
             TextBox6.Text = "0";
             TextBox7.Text = "0";
             ListBox2.Items.Clear();
-            ListBox2.Items.Add("주문 사항입니다");
+            ListBox2.Items.Add("주문 사항입니다.");
         }
     }
 }

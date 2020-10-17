@@ -25,46 +25,56 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험3
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            ListItem order = new ListItem(ListBox1.SelectedItem.Text, ListBox1.SelectedItem.Value);
-            ListItem price = new ListItem(ListBox1.SelectedItem.Value, ListBox1.SelectedItem.Text);
-
-            int del_item = ListBox2.Items.IndexOf(order);
-            ListBox2.Items.Remove(order);
-            ListBox2.Items.RemoveAt(del_item);
-            Label1.Text = "";
-            Label2.Text = "현재 요리 " + ListBox2.Items.Count.ToString() + "개를 주문하셨습니다.";
-
-            int sum = 0;
-
-            foreach(ListItem item in ListBox3.Items)
+            if (ListBox2.Items.Count > 0)
             {
-                sum += int.Parse(item.Text.ToString());
+                string menu, price;
+                menu = ListBox2.SelectedItem.Text.ToString();
+                price = ListBox2.SelectedItem.Value.ToString();
+
+                ListItem text = new ListItem(menu, price);
+                ListItem value = new ListItem(price, menu);
+
+                int index_sel = ListBox2.Items.IndexOf(text);
+                ListBox2.Items.Remove(text);
+                ListBox3.Items.RemoveAt(index_sel);
+                Label1.Text = "";
+                Label2.Text = "현재 요리 " + ListBox2.Items.Count.ToString() + "개 주문하셨슴다";
+                int sum = 0;
+                foreach (ListItem item in ListBox3.Items)
+                {
+                    sum += int.Parse(item.Text);
+                }
+                Label3.Text = "총 가격은 " + sum.ToString() + "임다";
             }
-            Label3.Text = "주문한 전체 요리 가격은 " + sum + "입니다.";
         }
 
         protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ListItem order = new ListItem(ListBox1.SelectedItem.Text, ListBox1.SelectedItem.Value);
-            ListItem price = new ListItem(ListBox1.SelectedItem.Value, ListBox1.SelectedItem.Text);
+            string menu, price;
+            menu = ListBox1.SelectedItem.Text.ToString();
+            price = ListBox1.SelectedItem.Value.ToString();
 
-            if (ListBox2.Items.Contains(order))
-                Label1.Text = "이미 주문하신 요리입니다.";
+            ListItem text = new ListItem(menu, price);
+            ListItem value = new ListItem(price, menu);
 
+            if (ListBox2.Items.Contains(text))
+            {
+                Label1.Text = "이미 주문하셨슴다";
+            }
             else
             {
-                ListBox2.Items.Add(order);
-                ListBox3.Items.Add(price);
+                ListBox2.Items.Add(text);
+                ListBox3.Items.Add(value);
                 Label1.Text = "";
-                Label2.Text = "현재 요리 " + ListBox2.Items.Count.ToString() + "개를 주문하셨습니다.";
             }
+            Label2.Text = "현재 요리 " + ListBox2.Items.Count.ToString() + "개를 주문하셨슴다";
 
             int sum = 0;
-
-            foreach (ListItem item in ListBox3.Items)
+            foreach(ListItem item in ListBox3.Items)
+            {
                 sum += int.Parse(item.Text.ToString());
-
-            Label3.Text = "주문한 전체 요리 가격은 " + sum + " 입니다.";
+            }
+            Label3.Text = "총 가격은 " + sum.ToString() + " 임다";
 
             ListBox1.SelectedIndex = -1;
         }

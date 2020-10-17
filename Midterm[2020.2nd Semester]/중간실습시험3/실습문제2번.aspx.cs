@@ -16,23 +16,22 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험3
 
         protected void Button2_Click(object sender, EventArgs e)
         {
+            //계산
             ListBox1.Items.Clear();
 
-            if(RadioButtonList1.SelectedIndex > -1)
+           if(RadioButtonList1.SelectedIndex > -1)
             {
                 ListBox1.Items.Add(new ListItem(RadioButtonList1.SelectedItem.Text,
                                                 RadioButtonList1.SelectedItem.Value));
             }
 
-            if (CheckBoxList1.SelectedIndex > -1) 
+           foreach(ListItem item in CheckBoxList1.Items)
             {
-                foreach (ListItem item in CheckBoxList1.Items)
+                if (item.Selected)
                 {
-                    if(item.Selected)
-                        ListBox1.Items.Add(new ListItem(item.Text, item.Value));
+                    ListBox1.Items.Add(new ListItem(item.Text, item.Value));
                 }
             }
-
             int sum = 0;
             foreach(ListItem item in ListBox1.Items)
             {
@@ -43,8 +42,14 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험3
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (RadioButtonList1.SelectedIndex > -1)
+            //초기화
+            ListBox1.Items.Clear();
+            TextBox1.Text = "";
+            
+            if(RadioButtonList1.SelectedIndex > -1)
+            {
                 RadioButtonList1.SelectedItem.Selected = false;
+            }
 
             if(CheckBoxList1.SelectedIndex > -1)
             {
@@ -54,8 +59,6 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험3
                         item.Selected = false;
                 }
             }
-
-            TextBox1.Text = "";
         }
     }
 }

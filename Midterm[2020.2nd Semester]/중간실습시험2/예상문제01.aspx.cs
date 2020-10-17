@@ -25,7 +25,7 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험2
                 for(int i = 0; i < numcells; i++)
                 {
                     TableCell c = new TableCell();
-                    c.Controls.Add(new LiteralControl("row" + j.ToString() + "cell" + i.ToString()));
+                    c.Controls.Add(new LiteralControl("row " + j.ToString() + ", cell " + i.ToString()));
                     r.Cells.Add(c);
                 }
                 Table1.Rows.Add(r);

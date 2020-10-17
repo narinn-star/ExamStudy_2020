@@ -11,7 +11,7 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //visible = true
         }
 
         protected void Button2_Click(object sender, EventArgs e)
@@ -78,6 +78,8 @@ namespace Midterm_2020._2nd_Semester_.중간실습시험3
             Label18.Text = "";
             Label19.Text = "";
             Label20.Text = "";
+
+            //visible = false;
         }
     }
 }
