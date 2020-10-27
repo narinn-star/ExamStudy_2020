@@ -1,0 +1,2 @@
+C:\Users\이나린\Desktop\2020\Programming\C\Study\[EXAMPLE]\Example_Ch5\Debug\Example_Ch5.exe
+C:\Users\이나린\Desktop\2020\Programming\C\Study\[EXAMPLE]\Example_Ch5\Debug\Example_Ch5.pdb
