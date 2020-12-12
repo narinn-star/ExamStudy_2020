@@ -1,0 +1,8 @@
+﻿  Print 03.c
+C:\Users\이나린\Desktop\2020\Programming\C\Study\[FINALEXAM]\문자열\Print 03.c(6,6): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  코드를 생성하고 있습니다.
+  6 of 7 functions (85.7%) were compiled, the rest were copied from previous compilation.
+    3 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+  문자열.vcxproj -> C:\Users\이나린\Desktop\2020\Programming\C\Study\[FINALEXAM]\문자열\Release\문자열.exe
