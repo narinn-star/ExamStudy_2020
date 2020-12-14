@@ -24,5 +24,8 @@
     <ClCompile Include="Print 03.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Print 04.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
