@@ -1,0 +1,7 @@
+﻿  17년도 04.c
+C:\Users\이나린\Desktop\2020\Programming\C\Study\[FINALEXAM]\Study_17(2)\17년도 04.c(5,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\이나린\Desktop\2020\Programming\C\Study\[FINALEXAM]\Study_17(2)\17년도 04.c(7,22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\이나린\Desktop\2020\Programming\C\Study\[FINALEXAM]\Study_17(2)\17년도 04.c(16,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\이나린\Desktop\2020\Programming\C\Study\[FINALEXAM]\Study_17(2)\17년도 04.c(18,22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\이나린\Desktop\2020\Programming\C\Study\[FINALEXAM]\Study_17(2)\17년도 04.c(27,6): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  Study_17(2).vcxproj -> C:\Users\이나린\Desktop\2020\Programming\C\Study\[FINALEXAM]\Study_17(2)\Debug\Study_17(2).exe
